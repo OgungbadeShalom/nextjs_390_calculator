@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1d1b1b;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(141,137,135);
+    --foreground: #ededed;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .result {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    gap: 2px; /* Tighter button spacing on small screens */
+  }
+}
+body {
+ 
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom: 0px;
+  overflow: hidden;
+}
+
+
+
